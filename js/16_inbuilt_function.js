@@ -58,4 +58,12 @@ document.write("After replacement of second element: "+array_1+"<br/></br>");
 // push, pop, indexof, filter, find, flat, foreach and other
 
 
+// Date
+document.write("---------- Array -------------<br/>");
+var date_1 = new Date();
+document.write("Date Time: "+date_1.toLocaleString()+"<br/>")
+document.write("Date: "+date_1.toLocaleDateString()+"<br/>")
+document.write("Time: "+date_1.toLocaleTimeString()+"<br/>")
+
+
 // Other Reference: https://www.tutorialspoint.com/javascript/javascript_builtin_functions.htm
