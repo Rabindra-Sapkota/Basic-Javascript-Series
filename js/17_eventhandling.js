@@ -43,5 +43,34 @@ function change_bg_image(image_path){
 
 
 function change_website(website_name){
-    window.location = website_name
+    function change_location(){
+        window.location = website_name
+    }
+    
+    // Wait for 3000 millisecond before redirect
+    setTimeout(change_location, 3000)
+    
+}
+
+
+function hangle_on_focus(x){
+    x.style.color = "blue";
+    x.style.backgroundColor = "pink";
+}
+
+
+function handle_on_blur(x){
+    x.style.color = "red";
+    x.style.backgroundColor = "yellow";
+}
+
+
+function handle_onload(){
+    // Wait For 5s before changing color
+    setTimeout(change_bg_color, 5000, "green");
+}
+
+
+function handle_on_submit(){
+    window.print()
 }

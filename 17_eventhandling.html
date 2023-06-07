@@ -4,12 +4,14 @@
         <title>EventHandling</title>
         <script src="js/17_eventhandling.js" type="text/javascript"></script>
     </head>
-    <body>
+    <body onload="handle_onload()">
         <!--
             Event           --      Trigger Time
             onload          ==>     When html document is loaded
             onfocus         ==>     When user focuses on certain field/object
-            onclick         ==>     When user click on button
+            onblur          ==>     When user comes out of focuses on certain field/object
+            onclick         ==>     When user clicks on button
+            onsubmit        ==>     When user clicks on submit input button 
             onmouseover     ==>     Mouse cursor is placed on target
             onmouseout      ==>     Mouse cursor is removed from target
             onchange        ==>     When value changes. Specially used with select objects
@@ -42,12 +44,12 @@
 
 
         <!-- Handling onchange event. Basically this event is used with select statement -->
+        <p>Change Color/Background/Website</p>
         <select onchange="change_bg_color(this.value)">
             <option value="">Select Background Color</option>
             <option value="red">Red</option>
             <option value="blue">Blue</option>
             <option value="yellow">Yellow</option>
-            <option value="green">Green</option>
             <option value="pink">Pink</option>
         </select>
 
@@ -57,17 +59,24 @@
             <option value="images/galaxy.jpg">Galaxy</option>
             <option value="images/grass.jpg">Grass</option>
             <option value="images/nature.jpg">Nature</option>
-        </select><br/><br/>
+        </select>
 
         <!-- Handling onchange event. Change Website -->
         <select onchange="change_website(this.value)">
             <option value="">Change website</option>
             <option value="https://www.google.com">Google</option>
             <option value="https://sapkotarabindra.com.np">Rabindra Sapkota</option>
-        </select><br/><br/>
+        </select>
 
-
+        
         <!-- Handling onfocus and onblur event -->
+        <p>Free Text Writting</p>
+        <input type="text" onfocus="hangle_on_focus(this)" onblur="handle_on_blur(this)"/>
+
+
+        <div>
+            <input type="submit" value="print" onclick="handle_on_submit()"/>
+        </div>
     </body>
 
 </html>
