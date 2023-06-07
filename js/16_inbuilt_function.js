@@ -59,7 +59,7 @@ document.write("After replacement of second element: "+array_1+"<br/></br>");
 
 
 // Date
-document.write("---------- Array -------------<br/>");
+document.write("---------- Date -------------<br/>");
 var date_1 = new Date();
 document.write("Date Time: "+date_1.toLocaleString()+"<br/>")
 document.write("Date: "+date_1.toLocaleDateString()+"<br/>")
