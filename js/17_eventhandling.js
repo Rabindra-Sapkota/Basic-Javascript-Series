@@ -74,3 +74,5 @@ function handle_onload(){
 function handle_on_submit(){
     window.print()
 }
+
+// Other Event Detail: https://www.tutorialspoint.com/javascript/javascript_events.htm
