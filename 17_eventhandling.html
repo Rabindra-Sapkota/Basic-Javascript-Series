@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EventHandling</title>
+        <script src="js/17_eventhandling.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <!--
+            Event           --      Trigger Time
+            onload          ==>     When html document is loaded
+            onfocus         ==>     When user focuses on certain field/object
+            onclick         ==>     When user click on button
+            onmouseover     ==>     Mouse cursor is placed on target
+            onmouseout      ==>     Mouse cursor is removed from target
+            onchange        ==>     When value changes. Specially used with select objects
+        -->
+        
+
+        <!-- Marquee Tag is for moving text -->
+        <!-- stop() and start() are in-built functions used to handle onmouseover & onmouseout event -->
+        <marquee onmouseover="stop()" onmouseout="start()">
+            <h1>Welcome to JavaScript</h1>
+        </marquee>
+        
+        
+        <!-- * Handling onmouseover & onmoseout event with custom function. 
+             * Whole h2 object is passed as an argument with this keyword -->
+        <h2 onmouseover="handle_mouse_over(this)" onmouseout="handle_mouse_out(this)">Hover to find Hidden Treasure</h2>
+
+
+        <!-- Handling on onclick event-->
+        <form name="calculator_form">
+            Number1: <input type="text" name="num_1" /><br/>
+            Number2: <input type="text" name="num_2" /><br/>
+            Result:  <input type="text" name="result" readonly/><br/>
+            <input type="button" value="ADD"      onclick="calculate(this)"/>
+            <input type="button" value="SUBTRACT" onclick="calculate(this)"/>
+            <input type="button" value="MULTIPLY" onclick="calculate(this)"/>
+            <input type="button" value="DIVIDE"   onclick="calculate(this)"/>
+            <input type="button" value="EXPONENT" onclick="calculate(this)"/><br/><br/>
+        </form>
+
+
+        <!-- Handling onchange event. Basically this event is used with select statement -->
+        <select onchange="change_bg_color(this.value)">
+            <option value="">Select Background Color</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="yellow">Yellow</option>
+            <option value="green">Green</option>
+            <option value="pink">Pink</option>
+        </select>
+
+        <!-- Handling onchange event. Change background image -->
+        <select onchange="change_bg_image(this.value)">
+            <option value="">Select Background Image</option>
+            <option value="images/galaxy.jpg">Galaxy</option>
+            <option value="images/grass.jpg">Grass</option>
+            <option value="images/nature.jpg">Nature</option>
+        </select><br/><br/>
+
+        <!-- Handling onchange event. Change Website -->
+        <select onchange="change_website(this.value)">
+            <option value="">Change website</option>
+            <option value="https://www.google.com">Google</option>
+            <option value="https://sapkotarabindra.com.np">Rabindra Sapkota</option>
+        </select><br/><br/>
+
+
+        <!-- Handling onfocus and onblur event -->
+    </body>
+
+</html>
