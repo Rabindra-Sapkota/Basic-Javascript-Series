@@ -33,3 +33,16 @@ Series on Core Javascript
   - onchange
   - onload
   - onsubmit
+  - setTimeout and setInterval
+
+- Error Handling
+
+  - try, catch, finally
+  - debugging
+  - throw
+
+- DOM (Document Object Model) and BOM (Browser Object Model)
+- Event Listner
+- Create and Delete Node
+- Form Validation
+- OOP in Java Script
