@@ -36,4 +36,11 @@ Syntax:
 
 -- Raising Error
 throw new Error("error_message")
+
+-- Debugging 
+    * Inspect and click on sources tab of browser
+    * Place break-point on html code
+    * Refresh the page
+    * Hover over the object to see its value
+    * On right side click on resume to resume continuation of code
 */
